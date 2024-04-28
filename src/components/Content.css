@@ -1,0 +1,28 @@
+ .Card {
+    width: 300px;
+    border-radius: 5px;
+    /* background: linear-gradient(rgb(0, 39, 137), rgb(3, 22, 65)); */
+    box-shadow: 0 4px 6px rgba(71, 71, 71, 0.6); /* Add shadow effect */
+}
+
+
+.card_img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 25px;
+    justify-content: space-evenly;
+}
+
+.card_head{
+    margin: 10px;
+}

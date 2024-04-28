@@ -1,0 +1,87 @@
+/* Header.css */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+
+.hamburger {
+    display: none; 
+    cursor: pointer;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-transform: capitalize;
+    font-size: larger;
+    align-items: center;
+}
+
+.navbar_item:hover{
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar_item:hover{
+    transform: scale(1.07);
+}
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */   
+    .hamburger {
+        display: block;
+        margin-top: 20px;
+        margin-left: 10px;
+        /* position: absolute;
+        top: 20px; 
+        left: 10px;   */
+    }
+
+    .menu {
+        display: none; /* Hide menu by default on smaller screens */
+    }
+
+    .clear {
+        display: block; /* Show menu when hamburger is clicked */
+        flex-direction: column;
+        font-size: medium;
+    }
+    
+    .remove{
+        display: none;
+    }
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+    .open .line:nth-child(1) {
+        transform: rotate(45deg) translate(0px, 6px);
+    }
+    
+    .open .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .open .line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -10px);
+    }
+    
+    .full-width .flag {
+        width: 100%;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
