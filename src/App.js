@@ -58,9 +58,9 @@ function App() {
       }
   }
   
-  useEffect(() => {
-    fetchNews();
-  }, []);
+useEffect(() => {
+    fetchNews()
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
 
   return (
