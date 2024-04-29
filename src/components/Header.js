@@ -20,7 +20,7 @@ export const Header = ({ setCountry, setGenre, setLoading, fetchNews, search_val
     }
 
     return (
-        <nav className={`navbar bg-blue-900 flex flex-row justify-evenly align-middle ${isMenuOpen ? "full-width" : ''}`}>
+        <nav className={`navbar bg-blue-900 flex flex-row justify-around align-middle ${isMenuOpen ? "full-width" : ''}`}>
             {/* Hamburger menu button */}
             <div className="flag">
                 <button 
