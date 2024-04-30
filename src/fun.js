@@ -1,1 +1,1 @@
-export const apiKey="apiKey=5f9b17df4bae4d849eb4dce352f4b094";
+export const apiKey="apiKey=YOUR_API_KEY";
